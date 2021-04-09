@@ -102,6 +102,39 @@
             </div>
         </section>
         <hr>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Your Own Journal Entry</legend>
+                <label for="album"><input type="radio" id="album"> Did you listen to an entire album today?</label><br>
+                <label for="learn"><input type="checkbox" id="learn"> Did you learn anything outside enrolled courses?</label><br><br>
+                <label for="name">Enter Your Name: <input type="text" id="name"></label><br><br>
+                <label for="date">Enter the Date of this Journal Entry: <input type="date" id="date"></label><br><br>
+                <label for="entry">Type your journal entry here:</label><br><br>
+                <textarea rows="10" cols="120" id="entry"></textarea><br><br>
+                <label for="prog-langs">Choose your favorite programming language (seriously, couldn't come up with a different question) out of the following: </label><br><br>
+                <input list="prog-langs" id="prog-langs"/>
+                <datalist id="prog-langs">
+                    <option value="ARM">
+                    <option value="x86">
+                    <option value="MIPS">
+                    <option value="SystemVerilog">
+                    <option value="Haskell">
+                </datalist><br><br>
+                <label for="college">What college are you from:</label>
+                <select name="college" id="college">
+                    <option value="">-Pick your college-</option>
+                    <option value="erc">ERC</option>
+                    <option value="warren">Warren</option>
+                    <option value="marshall">Marshall</option>
+                    <option value="muir">Muir</option>
+                    <option value="revelle">Revelle</option>
+                    <option value="sixth">Sixth</option>
+                    <option value="seventh">Seventh</option>
+                </select><br><br>
+                <button name="button">Submit (Actually doesn't work though)</button>
+            </fieldset>
+        </form>
+        <hr>
     </main>
     <footer>
         <h3>We making it outta this pandemic asap.</h3>
