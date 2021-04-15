@@ -1,3 +1,3 @@
-# Gaurav Dheeraj Kaliaperumal Kalidasan - Lab 2
+# Gaurav Dheeraj Kaliaperumal Kalidasan - Lab 3
 
-https://gaurav-dheeraj.github.io/Lab2/
+https://gaurav-dheeraj.github.io/sp21-cse110-lab3/
