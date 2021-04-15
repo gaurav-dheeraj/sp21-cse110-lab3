@@ -1,12 +1,20 @@
 /* External CSS */
 
+/* Styling for biggest heading in the header */
+h1{
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625em;
+  margin: 3.125rem auto 0;
+  color: #66BFBF;
+}
+
 /* Make hr become a series of subtle dots */
 hr{
-  border-top: 10px dotted #EAF6F6;
+  border-top: 7.5pt dotted #EAF6F6;
   border-left: none;
   border-right: none;
   border-bottom: none;
-  width: 10%;
+  width: 10vw;
 }
 
 /* Separate Styling for links to differentiate them */
@@ -24,7 +32,7 @@ a:hover{
 /* Styling for the hopeful footer */
 .foot-text{
   font-size: 0.75rem;
-  padding: 20px 20px;
+  padding: 20px 1.25pc;
   color: rgb(255, 255, 255);
 }
 
