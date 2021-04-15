@@ -1,3 +1,5 @@
+/* External CSS */
+
 /* Make hr become a series of subtle dots */
 hr{
   border-top: 10px dotted #EAF6F6;
@@ -26,7 +28,7 @@ a:hover{
   color: white;
 }
 
-/* Deafult styling for p */
+/* Default styling for p */
 p{
   font-family: 'Merriweather', serif;
   color: #40514e;
