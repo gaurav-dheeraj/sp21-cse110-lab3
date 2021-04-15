@@ -1,0 +1,33 @@
+/* Make hr become a series of subtle dots */
+hr{
+  border-top: 10px dotted #EAF6F6;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  width: 10%;
+}
+
+/* Separate Styling for links to differentiate them */
+a{
+  text-decoration: none;
+  font-family: 'Merriweather', serif;
+  color: #11999E;
+}
+
+/* Changes color of links when hovered over */
+a:hover{
+  color: white;
+}
+
+/* Styling for the hopeful footer */
+.foot-text{
+  font-size: 0.75rem;
+  padding: 20px 20px;
+  color: white;
+}
+
+/* Deafult styling for p */
+p{
+  font-family: 'Merriweather', serif;
+  color: #40514e;
+}
