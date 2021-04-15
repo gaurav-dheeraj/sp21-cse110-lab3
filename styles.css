@@ -18,18 +18,18 @@ a{
 
 /* Changes color of links when hovered over */
 a:hover{
-  color: white;
+  color: greenyellow;
 }
 
 /* Styling for the hopeful footer */
 .foot-text{
   font-size: 0.75rem;
   padding: 20px 20px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* Default styling for p */
 p{
   font-family: 'Merriweather', serif;
-  color: #40514e;
+  color: hsl(169, 12%, 28%);
 }
