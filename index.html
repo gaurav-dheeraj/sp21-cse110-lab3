@@ -18,20 +18,14 @@
             padding: 1% 1% 0;
             text-align: center;
         }
-        
-        /* Styling for biggest heading in the header */
-        h1{
-            font-family: 'Sacramento', cursive;
-            font-size: 5.625rem;
-            margin: 3.125rem auto 0;
-            color: #66BFBF;
-        }
 
         /* Styling for the footer */
         footer {
             background-color: #66BFBF;
-            padding: 50px 0 20px 0;
+            padding: 20px 0 20px 0;
             text-align: center;
+            border: none;
+            border-radius: 40px 10px;
         }
     </style>
 </head>
@@ -41,7 +35,7 @@
         <h3>Take a sneek peek at my life.</h3>
         <details>
             <summary>Some Basic Info about Myself</summary>
-            <ul>
+            <ul class="basic-info">
                 <li>Name: Gaurav Dheeraj Kaliaperumal Kalidasan</li>
                 <li>PID: A15912800</li>
                 <li>Email: gkaliape@ucsd.edu</li>
@@ -51,9 +45,9 @@
     </header>
     <nav>
         <ol>
-            <li><a href="#6-april">6 April</a></li>
-            <li><a href="#7-april">7 April</a></li>
-            <li><a href="#8-april">8 April</a></li>
+            <li class="date-list"><a href="#6-april">6 April</a></li>
+            <li class="date-list"><a href="#7-april">7 April</a></li>
+            <li class="date-list"><a href="#8-april">8 April</a></li>
         </ol>
         <hr>
     </nav>
@@ -68,14 +62,25 @@
                     Yoooo, my mom finally got the vaccine today. <span class="happy">Sweet, the end is near.</span> Can't wait to go outside without the fear of passing the disease to my immunocompromised parents. Otherwise, the <i>Chicken Chettinad Pepper Masala</i> I had for lunch was <b>meh</b> not going to lie. It did not touch not the heights it usually does. <a href="https://www.funfoodfrolic.com/chicken-chettinad-recipe/">Click here</a> for a crazy good recipe for this South Indian favorite.
                 </p>
                 <!-- Inline Styling appiled to this image -->
-                <img src="./media/chicken.jpeg" alt="Pretend there's chicken here." style="width:20%;height:auto;display:block;margin-left:auto;margin-right:auto;">
-                <h4>Albums I heard today</h4>
-                <ul>
-                    <li><strong>Karma</strong> by <em>Pharoah Sanders</em></li>
-                    <li><strong>Menneskekollektivet</strong> by <em>Lost Girls</em></li>
-                    <li><strong>White Pony</strong> by <em>Deftones</em></li>
-                    <li><strong>Bocanada</strong> by <em>Gustavo Cerati</em></li>
-                </ul>
+                <img src="./media/chicken.jpeg" alt="Pretend there's chicken here." style="width:20%;min-width:100px;height:auto;display:block;margin-left:auto;margin-right:auto;">
+                <div id="album-6april">
+                    <h4 class="topic">Albums I heard today</h4>
+                    <ul>
+                        <li><strong>Karma</strong> by <em>Pharoah Sanders</em></li>
+                        <li><strong>Menneskekollektivet</strong> by <em>Lost Girls</em></li>
+                        <li><strong>White Pony</strong> by <em>Deftones</em></li>
+                        <li><strong>Bocanada</strong> by <em>Gustavo Cerati</em></li>
+                    </ul>
+                </div>
+                <div id="lectures-6april">
+                    <h4 class="topic">Lectures I watched today</h4>
+                    <ul>
+                        <li><strong>CSE 110</strong></li>
+                        <li><strong>CSE 101</strong></li>
+                        <li><strong>CSE 151A</strong></li>
+                        <li><strong>CSE 142</strong></li>
+                    </ul>
+                </div>
             </div>
         </section>
         <hr>
@@ -86,9 +91,9 @@
             </div>
             <div class="entry">
                 <p>
-                    Anita Baker's R&B classic Rapture, dude what an album. The synths, the keys, the bass, the vocals. This is seriously good. I'd rate this a 54 outta 10 (wait, what?). Although the lyrics could get quite trite, the songwriting feels super fresh when compared to other 80's R&B classics. This veers away from the electro-R&B wave that dominated the 80's for something involved a cohesive mix of disco, post-disco, funk, fusion, soul, gospel and smooth jazz. Here's a <b><i>criminally unfunny</i></b> Roses are Red poem that I thought of and an audio recording of it:
+                    Anita Baker's R&B classic Rapture, dude what an album. The synths, the keys, the bass, the vocals. This is seriously good. I'd rate this a 54 outta 10 (wait, what?). Although the lyrics could get quite trite, the songwriting feels super fresh when compared to other 80's R&B classics. This veers away from the electro-R&B wave that dominated the 80's for something involved a cohesive mix of disco, post-disco, funk, fusion, soul, gospel and smooth jazz. Here's a <b class="break"><i>criminally unfunny</i></b> Roses are Red poem that I thought of and an audio recording of it:
                 </p>
-                <p>
+                <p id="poem">
                     Roses are Red. <br>
                     Violets are Blue. <br>
                     Dheeraj, I thought you knew HTML. <br>
@@ -98,13 +103,13 @@
                     <source src="./media/roses.mp3" type="audio/mpeg">
                     <p>Your browser doesn't support HTML audio.</p>
                 </audio>
-                <h4>Albums I heard today</h4>
+                <h4 class="topic">Albums I heard today</h4>
                 <ul>
-                    <li><strong>Rapture</strong> by <em>Anita Baker</em></li>
-                    <li><strong>Menneskekollektivet</strong> by <em>Lost Girls</em></li>
-                    <li><strong>White Pony</strong> by <em>Deftones</em></li>
-                    <li><strong>Bocanada</strong> by <em>Gustavo Cerati</em></li>
-                    <li><strong>Yankee Hotel Foxtrot</strong> by <em>Wilco</em></li>
+                    <li class="align-list"><strong>Rapture</strong> by <em>Anita Baker</em></li>
+                    <li class="align-list"><strong>Menneskekollektivet</strong> by <em>Lost Girls</em></li>
+                    <li class="align-list"><strong>White Pony</strong> by <em>Deftones</em></li>
+                    <li class="align-list"><strong>Bocanada</strong> by <em>Gustavo Cerati</em></li>
+                    <li class="align-list"><strong>Yankee Hotel Foxtrot</strong> by <em>Wilco</em></li>
                 </ul>
             </div>
         </section>
@@ -118,21 +123,21 @@
                 <p>
                     Nothing of substance really happened today. My city, Chennai in South India, is experiencing increased numbers of COVID cases. So, been staying at home for a while now. At least, with the vaccines I hope the end is near. Caught up with lectures and assignments mad early, so I was learning a lot of new React concepts and tried them out on a super simple Web App. Here's a video that my homies from India unearthed of my friend giving a super awkward speech (got his permission) a couple years ago:
                 </p>
-                <video controls>
+                <video controls class="vid">
                     <source src="./media/friend.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <h4>Albums I heard today</h4>
+                <h4 class="topic">Albums I heard today</h4>
                 <ul>
-                    <li><strong>Mos Def & Talib Kweli Are Black Star</strong> by <em>Black Star</em></li>
-                    <li><strong>timeabout,</strong> by <em>Yukika</em></li>
-                    <li><strong>BGM</strong> by <em>Yellow Magic Orchestra</em></li>
-                    <li><strong>Querencia</strong> by <em>CHUNG HA</em></li>
+                    <li class="align-list"><strong>Mos Def & Talib Kweli Are Black Star</strong> by <em>Black Star</em></li>
+                    <li class="align-list"><strong>timeabout,</strong> by <em>Yukika</em></li>
+                    <li class="align-list"><strong>BGM</strong> by <em>Yellow Magic Orchestra</em></li>
+                    <li class="align-list"><strong>Querencia</strong> by <em>CHUNG HA</em></li>
                 </ul>
             </div>
         </section>
         <hr>
-        <form action="https://gaurav-dheeraj.github.io/Lab2/" method="get">
+        <form action="https://gaurav-dheeraj.github.io/sp21-cse110-lab3/" method="get">
             <fieldset>
                 <legend>Your Own Journal Entry</legend>
                 <label for="album"><input type="radio" id="album"> Did you listen to an entire album today?</label><br>
