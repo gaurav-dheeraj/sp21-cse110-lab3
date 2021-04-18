@@ -9,7 +9,7 @@ main{
 }
 
 /* Styling for biggest heading in the header */
-h1{
+header h1{
   font-family: 'Sacramento', cursive;
   position: static;
   font-size: 5.625em;
@@ -33,7 +33,7 @@ h3{
 }
 
 @media (max-width: 1100px) {
-  h1 {
+  header h1 {
     font-size: 3em;
   }
 
@@ -130,13 +130,7 @@ li.align-list{
   width: fit-content;
 }
 
-#lectures-6april{
-  display: inline-block;
-  padding: 30px;
-  text-align: center;
-}
-
-#album-6april{
+#lectures-6april, #album-6april{
   display: inline-block;
   padding: 30px;
   text-align: center;
