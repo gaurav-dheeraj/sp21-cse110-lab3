@@ -37,9 +37,26 @@ h3{
     font-size: 3em;
   }
 
-  h3{
+  header > h3{
     font-size: 1.5rem;
   }
+}
+
+h2, h4{
+  font-family: 'Montserrat', sans-serif;
+  color: #66BFBF;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h4{
+  font-size: 1.2rem;
+}
+
+summary + ul {
+  list-style-type: none;
 }
 
 #flex-list{
@@ -47,16 +64,29 @@ h3{
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  list-style-type: none;
 }
 
 #flex-list *{
   flex-basis: 10%;
+  background-color: #eaf6f6;
+  text-align: center;
 }
 
 #form-initial{
   display: grid;
   grid-template-columns: [first] auto [second] 30% [third] 30% [fourth] auto [fifth];
   grid-template-rows: [one] 100px [two] 100px [three];
+}
+
+#form-initial *{
+  font-family: 'Merriweather', serif;
+  color: hsl(169, 12%, 28%);
+}
+
+ul li{
+  font-family: 'Merriweather', serif;
+  color: hsl(169, 12%, 28%);
 }
 
 #album-form{
@@ -168,4 +198,9 @@ button[name="submit"]:active {
   background: #3cb0fd;
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+}
+
+legend, legend ~ label, select, details{
+  font-family: 'Merriweather', serif;
+  color: hsl(169, 12%, 28%);
 }
