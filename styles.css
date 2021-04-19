@@ -1,9 +1,11 @@
 /* External CSS */
 
+/* Setting a margin of zero for the body to avoid unnecessary whitespace*/
 body{
   margin: 0;
 }
 
+/* Generally aligns all elements to the center of the page */
 main{
   text-align: center;
 }
@@ -32,6 +34,7 @@ h3{
   color: #66BFBF;
 }
 
+/* Responsive design where the heading and subheading adjust to screen width */
 @media (max-width: 1100px) {
   header h1 {
     font-size: 3em;
@@ -42,23 +45,28 @@ h3{
   }
 }
 
+/* Sets same font and color to all h2's and h4's */
 h2, h4{
   font-family: 'Montserrat', sans-serif;
   color: #66BFBF;
 }
 
+/* Sets h2 Font size */
 h2{
   font-size: 2rem;
 }
 
+/* Sets h4 Font size */
 h4{
   font-size: 1.2rem;
 }
 
+/* Sets a list style of none for the ul under the summary */
 summary + ul {
   list-style-type: none;
 }
 
+/* Flexbox styling for the ol in the navigation bar */
 #flex-list{
   display: flex;
   flex-direction: row;
@@ -67,6 +75,7 @@ summary + ul {
   list-style-type: none;
 }
 
+/* Sets attributes for the children in the flexbox */
 #flex-list *{
   flex-basis: 10%;
   flex-shrink: 0.5;
@@ -74,22 +83,20 @@ summary + ul {
   text-align: center;
 }
 
+/* Grid display for the four initial questions in the form */
 #form-initial{
   display: grid;
   grid-template-columns: [first] auto [second] 30% [third] 30% [fourth] auto [fifth];
   grid-template-rows: [one] 100px [two] 100px [three];
 }
 
+/* Sets attributes for the children in the grid */
 #form-initial *{
   font-family: 'Merriweather', serif;
   color: hsl(169, 12%, 28%);
 }
-
-ul li{
-  font-family: 'Merriweather', serif;
-  color: hsl(169, 12%, 28%);
-}
-
+/* Next four id's represent the children in the grid */
+/* Sets the grids occupied by these children */
 #album-form{
   grid-column: second / third;
   grid-row: one / two;
@@ -110,6 +117,13 @@ ul li{
   grid-row: one / two;
 }
 
+/* General styling for li elements under ul's */
+ul li{
+  font-family: 'Merriweather', serif;
+  color: hsl(169, 12%, 28%);
+}
+
+/* The headings for the lists are underlined */
 .topic{
   text-decoration: underline;
 }
@@ -152,37 +166,45 @@ p{
   color: hsl(169, 12%, 28%);
 }
 
+/* All list elements are aligned to the left */
 li {
   text-align: left;
 }
 
+/* Some list elements are aligned differently to accomodate other elements */
 li.align-list{
   position: relative;
   left: 40%;
   width: fit-content;
 }
 
+/* Two lists under 6 April are placed in same horizontal space */
 #lectures-6april, #album-6april{
   display: inline-block;
   padding: 30px;
   text-align: center;
 }
 
+/* Underordered List in Summary's display set to inline-block to 
+occupy only the space required */
 .basic-info{
   display: inline-block;
 }
 
+/* To extra emphasize "criminally unfunny" */
 .break{
   display: block;
   height: 30px;
   padding-top: 10px;
 }
 
+/* Styling for the video */
 .vid{
   max-width: 100%;
   height: auto;
 }
 
+/* General styling for the submit button */
 button[name="submit"] {
   background: #3498db;
   background-image: linear-gradient(to bottom, #3498db, #2980b9);
@@ -194,12 +216,14 @@ button[name="submit"] {
   text-decoration: none;
 }
 
+/* Styling for button when clicked */
 button[name="submit"]:active {
   background: #3cb0fd;
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 }
 
+/* Setting font and color for labels for myriad elements for consistency */
 legend, legend ~ label, select, details{
   font-family: 'Merriweather', serif;
   color: hsl(169, 12%, 28%);
